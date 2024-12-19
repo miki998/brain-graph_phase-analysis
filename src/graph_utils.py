@@ -187,6 +187,9 @@ def prep_transform(A:np.ndarray, gso:str="adj", composite:bool=True, verbose:boo
         L = deepcopy(A)
     elif gso == "laplacian":
         L = compute_directed_laplacian(A, in_degree=in_degree)
+    else:
+        print("Unsupported GSO ... using adjacency matrix")
+        L = deepcopy(A)
 
     U, V = compute_basis(L, verbose=verbose, gso=gso)
     Uinv = np.linalg.inv(U)
