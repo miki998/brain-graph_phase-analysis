@@ -83,7 +83,7 @@ def compute_directed_laplacian(A:np.ndarray, in_degree:bool=True):
     return ret
 
 
-def compute_basis(L:np.ndarray, method:str="eig", tol:float=1e-13, verbose:bool=True, gso:str='laplacian'):
+def compute_basis(L:np.ndarray, method:str="eig", tol:float=1e-13, verbose:bool=False, gso:str='laplacian'):
     """
     Computes basis for transform matrix supporting different methods:
 

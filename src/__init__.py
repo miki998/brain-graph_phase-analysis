@@ -7,4 +7,5 @@ from src.metrics import *
 from src.plot_surf import *
 from src.operations import *
 from src.graph_utils import *
+from src.braingraph_utils import *
 from src.jordanzero_destroy import *
